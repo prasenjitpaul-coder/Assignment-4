@@ -1,0 +1,1742 @@
+/* For screens between 320px and 480px */
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+
+    .nav {
+
+        padding: 0rem 2vw;
+    }
+
+    .nav-box {
+        font-size: 2.7vw;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+
+
+    }
+
+    .nav-logo {
+        font-weight: bold;
+        font-size: 3.9vw;
+        padding: 1vw;
+
+        color: rgba(24, 24, 24, 0.774);
+    }
+
+    .nav-links ul {
+        gap: 0.5rem;
+
+        font-size: 2.9vw;
+        color: rgba(24, 24, 24, 0.438);
+
+    }
+
+    .nav-links ul li::after {
+        content: "";
+        background-color: aqua;
+        height: 1vw;
+        width: 0;
+
+    }
+
+    .nav-links ul li:hover::after {
+        width: 100%;
+
+    }
+
+    .nav-profile p {
+        border-radius: 6px;
+        margin: 7% 0;
+        padding: 1.3vw;
+        font-weight: 200;
+        font-size: 2.9vw;
+        background-color: rgba(116, 239, 243, 0.308);
+    }
+
+    .middle-header {
+        padding: 0rem 2vw;
+        margin-top: 4vw;
+        justify-content: space-between;
+    }
+
+    .booking-text h3 {
+        padding: 2vw 5vw;
+        color: rgba(0, 0, 0, 0.753);
+        padding-bottom: 1vw;
+        font-size: 9.35vw;
+    }
+
+    .booking-text h3 span {
+        color: rgba(13, 116, 233, 0.808);
+    }
+
+    .booking-text p {
+        color: rgba(128, 128, 128, 0.582);
+        padding: 1.5vw 5vw;
+
+        font-size: 3.5vw;
+    }
+
+    .booking-text button {
+        background-color: rgba(13, 116, 233, 0.808);
+        border: none;
+        width: 45vw;
+        font-size: 3.2vw;
+        padding: 3vw;
+        position: relative;
+        left: 4.5vw;
+        border-radius: 8px;
+        color: aliceblue;
+    }
+
+    .booking-text button ion-icon {
+        margin-right: 0.4vw;
+        position: relative;
+        top: 0.3vw;
+    }
+
+    .booking-img {
+
+        overflow: hidden;
+        margin-top: 10vw;
+    }
+
+    .booking-img img {
+        height: 95vw;
+        display: flex;
+        margin: auto;
+
+    }
+
+    .end-header {
+        background-color: rgba(13, 116, 233, 0.808);
+        padding: 5vw;
+        margin-top: 2vw;
+
+
+    }
+
+    .end-header-text h5 {
+        text-align: center;
+        font-size: 4.6vw;
+        margin-bottom: 4vw;
+    }
+
+    .end-header-text2 {
+        display: flex;
+
+        font-size: 4.5vw;
+
+    }
+
+    .end-header-text2 div {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .end-header-text2 p {
+        color: rgba(34, 34, 34, 0.829);
+        font-size: 3vw;
+    }
+
+    .checkout-section {
+        padding: 2vw 3vw;
+        background-color: rgb(194, 194, 194);
+
+    }
+
+    .left-checkout {
+        border: 0.2vw solid rgb(71, 71, 71);
+        background-color: rgb(224, 222, 222);
+        padding: 1vw;
+        border-radius: 5vw;
+    }
+
+    .left-checkout h3 {
+        font-size: 5vw;
+        text-align: center;
+        color: rgba(7, 7, 7, 0.911);
+    }
+
+    .left-p1 {
+        color: rgba(59, 59, 59, 0.911);
+        font-size: 3.1vw;
+        margin-top: 1.5vw;
+        text-align: center;
+        padding-bottom: 2vw;
+        margin-bottom: 2vw;
+        border-bottom: 0.2vw solid gray;
+    }
+
+    .left-p {
+        font-size: 3vw;
+        margin-bottom: 4vw;
+        color: rgba(13, 116, 233, 0.808);
+    }
+
+    .add-del-p {
+        color: rgb(54, 54, 54);
+        font-size: 3.4vw;
+        font-weight: 500;
+        margin-top: 0.6vw;
+    }
+
+    .add-del-p img {
+        height: 4vw;
+        position: relative;
+        top: 0.3vw;
+        margin-right: 0.6vw;
+    }
+
+    .add-del-p span {
+        color: rgba(13, 116, 233, 0.808);
+        margin-left: 2vw;
+    }
+
+    .add-del-items {
+
+        justify-content: space-between;
+        border-bottom: 0.2vw solid gray;
+
+    }
+
+    .add-del-items-name-btn-box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .add-del-items button {
+        font-size: 3.5vw;
+        display: flex;
+
+        margin-bottom: 3vw;
+        color: rgb(54, 54, 54);
+        border-radius: 1.8vw;
+        padding: 1vw;
+        width: 28vw;
+        background-color: rgba(65, 65, 65, 0.26);
+        border: none;
+
+    }
+
+    .add-del-items button span {
+        transition: all 0.6s ease-in-out;
+        padding: 0.3vw;
+        margin: auto;
+    }
+
+    .add-del-items button ion-icon {
+        position: relative;
+        top: 0.2vw;
+        transition: all 2s ease-in-out;
+        font-size: 4vw;
+        margin-left: 0.5vw;
+    }
+
+    .left-p-icon ion-icon {
+        position: relative;
+        top: 0.7vw;
+        margin-right: 0.6vw;
+        font-size: 4vw;
+    }
+
+    .right-checkout button {
+        padding: 2vw;
+        font-size: 3vw;
+        width: 65.5vw;
+        display: block;
+        border-radius: 1.7vw;
+
+        border: none;
+        margin: auto;
+        margin-bottom: 1.3vw;
+    }
+
+
+
+    .btn-book-now1 {
+        color: antiquewhite;
+        background-color: rgba(13, 116, 233, 0.808);
+    }
+
+    .btn-book-now2 {
+        color: antiquewhite;
+        background-color: rgba(13, 116, 233, 0.384);
+    }
+
+
+
+    .right-checkout-heading {
+        font-size: 5vw;
+        margin-top: 1vw;
+        border-radius: 2vw 2vw 0vw 0vw;
+        background-color: rgb(224, 222, 222);
+        text-align: center;
+        border: 0.2vw solid rgb(71, 71, 71);
+        margin-bottom: 0vw;
+
+    }
+
+    .right-checkout-serial-heading {
+        display: flex;
+        padding: 1vw;
+        border-left: 0.2vw solid rgb(71, 71, 71);
+        border-right: 0.2vw solid rgb(71, 71, 71);
+        font-weight: 600;
+        justify-content: space-between;
+    }
+
+    #cartList {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .right-checkout-items-add-del-itemslist {
+        display: flex;
+        font-weight: 600;
+        margin-top: 1vw;
+
+        justify-content: space-between;
+    }
+
+    .right-checkout-items-add-del-itemslist p span {
+        margin-left: 8.5vw;
+
+    }
+
+    #BoldTotal {
+        font-weight: 800;
+    }
+
+    .right-checkout-serial-heading p {
+        font-size: 3.5vw;
+
+    }
+
+    .right-checkout-serial-heading p span {
+        margin-left: 2vw;
+    }
+
+    .right-checkout-items-add-del {
+        text-align: center;
+
+        border: 0.2vw solid rgb(71, 71, 71);
+        background-color: rgb(224, 222, 222);
+    }
+
+    .right-checkout-items-add-del h1 ion-icon {
+        font-size: 10vw;
+
+    }
+
+    .right-checkout-items-add-del h2 {
+        font-size: 3.4vw;
+    }
+
+    .right-checkout-items-add-del p {
+        font-size: 3.5vw;
+        color: rgb(54, 54, 54);
+    }
+
+    .right-checkout-total {
+        display: flex;
+        margin: 0vw 0vw;
+        padding: 2.5vw;
+        border: 0.2vw solid rgb(71, 71, 71);
+        border-top: none;
+        border-radius: 0vw 0vw 2vw 2vw;
+        background-color: rgb(224, 222, 222);
+        justify-content: space-between;
+    }
+
+    .right-checkout-total h1 {
+        font-size: 3.5vw;
+
+    }
+
+    .right-checkout-total p {
+        font-size: 4.5vw;
+        font-weight: 600;
+    }
+
+    .right-checkout-total p span {
+        margin-right: 0.5vw;
+        font-weight: 600;
+    }
+
+    .right-checkout-email {
+        background-color: rgb(224, 222, 222);
+        margin-top: 2vw;
+        border-radius: 2vw;
+        border: 0.2vw solid rgb(71, 71, 71);
+    }
+
+
+
+    .right-checkout-email-fullname-label,
+    .right-checkout-email-email-label,
+    .right-checkout-email-phone-label {
+        display: flex;
+        padding: 0vw 2vw;
+
+        justify-content: space-between;
+        margin-bottom: 2vw;
+    }
+
+    .right-checkout-email-fullname-label label,
+    .right-checkout-email-email-label label,
+    .right-checkout-email-phone-label label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .right-checkout-email-phone-label {
+        margin-bottom: 6vw;
+    }
+
+    .right-checkout-email input {
+        padding: 0.4vw;
+        width: 50vw;
+
+
+    }
+
+    .right-checkout-email h3 {
+        font-size: 5vw;
+        text-align: center;
+        margin-bottom: 4vw;
+    }
+
+    .right-checkout-email-alert {
+        color: brown;
+        font-size: 2.5vw;
+
+
+    }
+
+    .right-checkout-email-alert {
+        text-align: center;
+        margin: 1vw 0vw;
+        display: none;
+
+    }
+
+    .right-checkout-email-alert2 {
+        text-align: center;
+        margin: 1vw 0vw;
+        display: none;
+
+    }
+
+
+
+    .right-checkout-email-alert2 {
+        color: rgb(46, 165, 42);
+        font-size: 2.5vw;
+
+    }
+
+    .right-checkout-email-alert2 ion-icon {
+        top: 0.4vw;
+        color: brown;
+        position: relative;
+
+        font-weight: 400;
+    }
+
+
+    .right-checkout-email-alert ion-icon {
+        top: 0.4vw;
+        color: brown;
+        position: relative;
+
+        font-weight: 400;
+    }
+
+    .right-checkout-email label {
+        font-size: 3vw;
+
+    }
+
+    .minus {
+        display: none;
+    }
+
+    .Support-info-container {
+        padding: 4vw;
+    }
+
+    .Support-info-container div {
+        background-color: rgb(218, 211, 203);
+        margin: 2vw;
+        border-radius: 2vw;
+        border: 0.2vw solid gray;
+
+    }
+
+
+    .Support-info-container div img {
+        height: 28vw;
+        display: flex;
+        margin: 2vw auto;
+        padding-top: 2vw;
+
+
+    }
+
+    .Support-info-container div h3 {
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    .Support-info-container div p {
+        text-align: center;
+        font-size: 4vw;
+        padding: 1vw;
+        color: rgba(0, 0, 0, 0.637);
+    }
+
+    .subscribe-section {
+        background-color: rgba(13, 116, 233, 0.808);
+        padding: 1vw 3vw;
+
+    }
+
+    .subscribe-section h3 {
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 7vw;
+        color: rgba(0, 0, 0, 0.733);
+    }
+
+    .subscribe-section div button {
+        display: flex;
+        margin: auto;
+
+        padding: 2vw 7vw;
+        font-size: 2.5vw;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .subscribe-section-input-box {
+        display: flex;
+        justify-content: space-evenly;
+
+
+        margin: 2vw 6vw;
+    }
+
+    .subscribe-section-input-box input {
+        padding: 2vw;
+        width: 40vw;
+
+    }
+
+    .footer {
+        padding: 2vw 2vw;
+    }
+
+    .footer-container {
+        font-size: 1.8vw;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .footer-container div {
+        margin: 0vw 1vw;
+
+    }
+
+    .footer-container div p {
+        font-size: 1.8vw;
+    }
+
+    .footer-links ul {
+        list-style: none;
+    }
+}
+
+/* For screens between 480px and 790px */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .nav {
+
+        padding: 0rem 2vw;
+    }
+
+    .nav-box {
+        font-size: 2.7vw;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+
+
+    }
+
+    .nav-logo {
+        font-weight: bold;
+        font-size: 3.9vw;
+        padding: 1vw;
+        color: rgba(24, 24, 24, 0.774);
+    }
+
+    .nav-links ul {
+        gap: 0.5rem;
+        font-size: 2.9vw;
+        color: rgba(24, 24, 24, 0.438);
+
+    }
+
+    .nav-profile p {
+        border-radius: 6px;
+        margin: 7% 0;
+        padding: 1.3vw;
+        font-weight: 200;
+        font-size: 2.9vw;
+        background-color: rgba(116, 239, 243, 0.308);
+    }
+
+    .middle-header {
+        padding: 0rem 2vw;
+        margin-top: 4vw;
+        justify-content: space-between;
+    }
+
+    .booking-text h3 {
+        padding: 2vw 5vw;
+        color: rgba(0, 0, 0, 0.753);
+        padding-bottom: 1vw;
+        font-size: 9.35vw;
+    }
+
+    .booking-text h3 span {
+        color: rgba(13, 116, 233, 0.808);
+    }
+
+    .booking-text p {
+        color: rgba(128, 128, 128, 0.582);
+        padding: 1.5vw 5vw;
+
+        font-size: 3.5vw;
+    }
+
+    .booking-text button {
+        background-color: rgba(13, 116, 233, 0.808);
+        border: none;
+        width: 45vw;
+        font-size: 3.2vw;
+        padding: 3vw;
+        position: relative;
+        left: 4.5vw;
+        border-radius: 8px;
+        color: aliceblue;
+    }
+
+    .booking-text button ion-icon {
+        margin-right: 0.4vw;
+        position: relative;
+        top: 0.3vw;
+    }
+
+    .booking-img {
+
+        overflow: hidden;
+        margin-top: 10vw;
+    }
+
+    .booking-img img {
+        height: 95vw;
+        display: flex;
+        margin: auto;
+
+    }
+
+    .end-header {
+        background-color: rgba(13, 116, 233, 0.808);
+        padding: 5vw;
+        margin-top: 2vw;
+
+
+    }
+
+    .end-header-text h5 {
+        text-align: center;
+        font-size: 4.6vw;
+        margin-bottom: 4vw;
+    }
+
+    .end-header-text2 {
+        display: flex;
+
+        font-size: 4.5vw;
+
+    }
+
+    .end-header-text2 div {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .end-header-text2 p {
+        color: rgba(34, 34, 34, 0.829);
+        font-size: 3vw;
+    }
+
+    .checkout-section {
+        padding: 2vw 3vw;
+
+
+    }
+
+    .left-checkout {
+
+        padding: 1vw;
+        border-radius: 5vw;
+    }
+
+    .left-checkout h3 {
+        font-size: 5vw;
+        text-align: center;
+        color: rgba(7, 7, 7, 0.911);
+    }
+
+    .left-p1 {
+        color: rgba(59, 59, 59, 0.911);
+        font-size: 3.1vw;
+        margin-top: 1.5vw;
+        text-align: center;
+        margin-bottom: 4vw;
+    }
+
+    .left-p {
+        font-size: 3vw;
+        margin-bottom: 4vw;
+        color: rgba(59, 59, 59, 0.911)
+    }
+
+    .add-del-p {
+        color: rgb(54, 54, 54);
+        font-size: 3.4vw;
+        font-weight: 500;
+        margin-top: 0.6vw;
+    }
+
+    .add-del-p img {
+        height: 4vw;
+        position: relative;
+        top: 0.3vw;
+        margin-right: 0.6vw;
+    }
+
+    .add-del-p span {
+        color: rgba(13, 116, 233, 0.808);
+        margin-left: 2vw;
+    }
+
+    .add-del-items {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .add-del-items button {
+        font-size: 3.5vw;
+        display: flex;
+
+        margin-bottom: 3vw;
+        color: rgb(54, 54, 54);
+        border-radius: 1.8vw;
+        padding: 1vw;
+        width: 28vw;
+        background-color: rgba(65, 65, 65, 0.26);
+        border: none;
+
+    }
+
+    .add-del-items button span {
+        transition: all 0.6s ease-in-out;
+        padding: 0.3vw;
+        margin: auto;
+    }
+
+    .add-del-items button ion-icon {
+        position: relative;
+        top: 0.2vw;
+        transition: all 2s ease-in-out;
+        font-size: 4vw;
+        margin-left: 0.5vw;
+    }
+
+    .left-p-icon ion-icon {
+        position: relative;
+        top: 0.7vw;
+        margin-right: 0.6vw;
+        font-size: 4vw;
+    }
+
+    .right-checkout button {
+        padding: 2vw;
+        font-size: 3vw;
+        width: 65.5vw;
+        display: block;
+        border-radius: 1.7vw;
+
+        border: none;
+        margin: auto;
+        margin-bottom: 4vw;
+    }
+
+
+
+    .btn-book-now1 {
+        color: antiquewhite;
+        background-color: rgba(13, 116, 233, 0.808);
+    }
+
+    .btn-book-now2 {
+        color: antiquewhite;
+        background-color: rgba(13, 116, 233, 0.384);
+    }
+
+    .right-checkout-email-alert {
+        text-align: center;
+        margin: 3vw 0vw;
+        display: none;
+
+    }
+
+    .right-checkout-heading {
+        font-size: 5vw;
+        text-align: center;
+        margin-bottom: 4vw;
+    }
+
+    .right-checkout-serial-heading {
+        display: flex;
+        font-weight: 600;
+        justify-content: space-between;
+    }
+
+    #cartList {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .right-checkout-items-add-del-itemslist {
+        display: flex;
+        font-weight: 600;
+        margin-top: 1vw;
+        justify-content: space-between;
+    }
+
+    .right-checkout-items-add-del-itemslist p span {
+        margin-left: 8.5vw;
+
+    }
+
+    #BoldTotal {
+        font-weight: 800;
+    }
+
+    .right-checkout-serial-heading p {
+        font-size: 3.5vw;
+
+    }
+
+    .right-checkout-serial-heading p span {
+        margin-left: 2vw;
+    }
+
+    .right-checkout-items-add-del {
+        text-align: center;
+        height: 21vh;
+    }
+
+    .right-checkout-items-add-del h1 ion-icon {
+        font-size: 10vw;
+    }
+
+    .right-checkout-items-add-del h2 {
+        font-size: 3.4vw;
+    }
+
+    .right-checkout-items-add-del p {
+        font-size: 3.5vw;
+        color: rgb(54, 54, 54);
+    }
+
+    .right-checkout-total {
+        display: flex;
+        margin: 5vw 0vw;
+        padding: 2.5vw;
+        justify-content: space-between;
+    }
+
+    .right-checkout-total h1 {
+        font-size: 3.5vw;
+
+    }
+
+    .right-checkout-total p {
+        font-size: 4.5vw;
+        font-weight: 600;
+    }
+
+    .right-checkout-total p span {
+        margin-right: 0.5vw;
+        font-weight: 600;
+    }
+
+
+
+    .right-checkout-email-fullname-label,
+    .right-checkout-email-email-label,
+    .right-checkout-email-phone-label {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2vw;
+    }
+
+    .right-checkout-email-fullname-label label,
+    .right-checkout-email-email-label label,
+    .right-checkout-email-phone-label label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .right-checkout-email-phone-label {
+        margin-bottom: 6vw;
+    }
+
+    .right-checkout-email input {
+        padding: 0.4vw;
+        width: 50vw;
+
+
+    }
+
+    .right-checkout-email h3 {
+        font-size: 5vw;
+        text-align: center;
+        margin-bottom: 5vw;
+    }
+
+    .right-checkout-email-alert {
+        color: brown;
+        font-size: 3.7vw;
+
+
+    }
+
+    .right-checkout-email-alert ion-icon {
+        top: 0.7vw;
+        color: brown;
+        position: relative;
+
+        font-weight: 400;
+    }
+
+    .right-checkout-email label {
+        font-size: 3vw;
+
+    }
+
+    .minus {
+        display: none;
+    }
+
+    .Support-info-container {
+        padding: 4vw;
+    }
+
+    .Support-info-container div {
+        background-color: rgb(218, 211, 203);
+        margin: 2vw;
+        border-radius: 2vw;
+        border: 0.2vw solid gray;
+
+    }
+
+
+    .Support-info-container div img {
+        height: 28vw;
+        display: flex;
+        margin: 2vw auto;
+        padding-top: 2vw;
+
+
+    }
+
+    .Support-info-container div h3 {
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    .Support-info-container div p {
+        text-align: center;
+        font-size: 4vw;
+        padding: 1vw;
+        color: rgba(0, 0, 0, 0.637);
+    }
+
+    .subscribe-section {
+        background-color: rgba(13, 116, 233, 0.808);
+        padding: 1vw 3vw;
+
+    }
+
+    .subscribe-section h3 {
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 7vw;
+        color: rgba(0, 0, 0, 0.733);
+    }
+
+    .subscribe-section div button {
+        display: flex;
+        margin: auto;
+
+        padding: 2vw 7vw;
+        font-size: 2.5vw;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .subscribe-section-input-box {
+        display: flex;
+        justify-content: space-evenly;
+
+
+        margin: 2vw 6vw;
+    }
+
+    .subscribe-section-input-box input {
+        padding: 2vw;
+        width: 40vw;
+
+    }
+
+    .footer {
+        padding: 2vw 2vw;
+    }
+
+    .footer-container {
+        font-size: 1.8vw;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .footer-container div {
+        margin: 0vw 1vw;
+
+    }
+
+    .footer-container div p {
+        font-size: 1.8vw;
+    }
+
+    .footer-links ul {
+        list-style: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1920px) {
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0rem 1vw;
+    }
+
+    .nav-box {
+        font-size: 1vw;
+
+        align-items: center;
+        justify-content: center;
+        display: flex;
+
+
+
+    }
+
+    .nav-logo {
+        font-weight: bold;
+        font-size: 2vw;
+        padding: 1vw;
+        color: rgba(24, 24, 24, 0.774);
+    }
+
+    .nav-links ul {
+        gap: 2.5vw;
+        font-size: 1vw;
+        color: rgba(24, 24, 24, 0.438);
+        display: flex;
+
+
+    }
+
+    .nav-links ul li {
+        cursor: pointer;
+    }
+
+    .nav-links ul li::after {
+        content: "";
+        width: 220vw;
+        height: 110vw;
+        background-color: brown;
+    }
+
+    .nav-profile p {
+        border-radius: 6px;
+        margin: 7% 0;
+        padding: 1vw;
+        font-weight: 200;
+        font-size: 1.2vw;
+        background-color: rgba(116, 239, 243, 0.308);
+    }
+
+    .middle-header {
+        padding: 0rem 2vw;
+        margin: 5vw 0vw;
+        display: flex;
+
+        justify-content: space-between;
+    }
+
+    .booking-text h3 {
+        padding: 2vw 5vw;
+        color: rgba(0, 0, 0, 0.753);
+        padding-bottom: 0.4vw;
+        font-size: 3vw;
+    }
+
+    .booking-text h3 span {
+        color: rgba(13, 116, 233, 0.808);
+    }
+
+    .booking-text p {
+        color: rgba(128, 128, 128, 0.582);
+        padding: 1.5vw 5vw;
+
+        font-size: 1.4vw;
+    }
+
+    .booking-text {
+        width: 50vw;
+
+
+    }
+
+    .booking-text button {
+        background-color: rgba(13, 116, 233, 0.808);
+        border: none;
+        width: 22vw;
+        font-size: 1vw;
+        padding: 1.3vw 1vw;
+        position: relative;
+        left: 5vw;
+        border-radius: 1vw;
+        color: aliceblue;
+        cursor: pointer;
+    }
+
+    .booking-text button ion-icon {
+        margin-right: 0.2vw;
+        position: relative;
+        top: 0.1vw;
+    }
+
+    .booking-img {
+
+        overflow: hidden;
+
+        width: 50vw;
+    }
+
+    .booking-img img {
+        height: 30vw;
+
+        display: flex;
+        margin: auto;
+
+    }
+
+    .end-header {
+        background-color: rgba(13, 116, 233, 0.808);
+        padding: 2.5vw 3vw;
+        margin: 0vw 0vw;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .end-header-text h5 {
+        text-align: center;
+
+        font-size: 2.8vw;
+        width: 31vw;
+
+    }
+
+    .end-header-text2 {
+        display: flex;
+
+
+        font-size: 2.8vw;
+        width: 50vw;
+
+    }
+
+    .end-header-text2 div {
+
+        margin: auto;
+
+    }
+
+    .end-header-text2 p {
+        color: rgba(34, 34, 34, 0.829);
+        letter-spacing: 0.2vw;
+        font-size: 1.6vw;
+
+
+    }
+
+    .checkout-section {
+        padding: 5vw 11vw;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(194, 194, 194);
+        max-height: 60vw;
+        min-height: 20vw;
+    }
+
+    .left-checkout {
+        background-color: rgb(224, 222, 222);
+        padding: 2vw;
+        border: 0.1vw solid gray;
+        margin: 0vw 1vw;
+        border-radius: 1vw;
+        height: 49vw;
+    }
+
+    .left-checkout h3 {
+        font-size: 2vw;
+
+        color: rgba(7, 7, 7, 0.911);
+    }
+
+    .left-p1 {
+        color: rgba(59, 59, 59, 0.911);
+        font-size: 1.1vw;
+        margin-top: 1vw;
+        padding-bottom: 3vw;
+        border-bottom: 0.1vw solid rgb(143, 143, 143);
+        margin-bottom: 2vw;
+    }
+
+    .left-p {
+        font-size: 1vw;
+        margin-bottom: 1vw;
+
+        color: rgba(13, 116, 233, 0.808);
+    }
+
+    .add-del-p {
+        color: rgb(54, 54, 54);
+        font-size: 1vw;
+        font-weight: 500;
+        margin-top: 0.6vw;
+    }
+
+    .add-del-p img {
+        height: 1.5vw;
+        position: relative;
+        top: 0.3vw;
+        margin-right: 0.6vw;
+    }
+
+    .add-del-p span {
+        color: rgba(13, 116, 233, 0.808);
+        margin-left: 2vw;
+    }
+
+    .add-del-items {
+
+
+        justify-content: space-between;
+        border-bottom: 0.1vw solid rgb(143, 143, 143);
+        height: 30vw;
+        overflow-x: hidden;
+        width: 40vw;
+
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .add-del-items-name-btn-box {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.5vw;
+    }
+
+    .add-del-items-name-btn-box button {
+        font-size: 1vw;
+        display: flex;
+
+        margin-top: 0.5vw;
+        color: rgb(54, 54, 54);
+        border-radius: 0.8vw;
+        padding: 0.5vw;
+        width: 12vw;
+        background-color: rgba(65, 65, 65, 0.26);
+        border: none;
+
+    }
+
+    .add-del-items-name-btn-box button span {
+        transition: all 0.6s ease-in-out;
+        padding: 0.3vw;
+        margin: auto;
+    }
+
+    .add-del-items-name-btn-box button ion-icon {
+        position: relative;
+
+        top: 0.3vw;
+        transition: all 2s ease-in-out;
+        font-size: 1.3vw;
+        margin-left: 0.5vw;
+    }
+
+    .left-p-icon ion-icon {
+        position: relative;
+        top: 0.4vw;
+        margin-top: 2vw;
+        margin-right: 0.3vw;
+        font-size: 1.7vw;
+    }
+
+    .right-checkout {
+        width: 30vw;
+
+    }
+
+    .right-checkout button {
+        padding: 1vw;
+        font-size: 1vw;
+        width: 27.3vw;
+        display: block;
+        border-radius: 0.7vw;
+
+        border: none;
+        margin: auto;
+        margin-top: 0.7vw;
+    }
+
+
+
+    .btn-book-now1 {
+        color: antiquewhite;
+        background-color: rgba(13, 116, 233, 0.808);
+    }
+
+    .btn-book-now2 {
+        color: antiquewhite;
+        background-color: rgba(13, 116, 233, 0.384);
+    }
+
+    .right-checkout-email-alert {
+        text-align: center;
+        margin: 1vw 0vw;
+        display: none;
+
+    }
+
+    .right-checkout-heading {
+        font-size: 1.5vw;
+        text-align: center;
+        margin-top: -0.5vw;
+        margin-bottom: 0vw;
+        padding: 1vw 0vw;
+        border: 0.1vw solid gray;
+        border-radius: 1vw 1vw 0vw 0vw;
+        background-color: rgb(224, 222, 222);
+    }
+
+    .right-checkout-serial-heading {
+        display: flex;
+        border: 0.1vw solid gray;
+        padding: 0.5vw 1vw;
+        font-weight: 600;
+        justify-content: space-between;
+    }
+
+    #cartList {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 0.1vw solid rgb(224, 222, 222);
+    }
+
+
+    .right-checkout-items-add-del-itemslist {
+        display: flex;
+        font-weight: 600;
+        margin-top: 0vw;
+        padding: 0.5vw 0.5vw;
+        border-bottom: 0.1vw solid gray;
+        justify-content: space-between;
+        background-color: rgb(224, 222, 222);
+    }
+
+    .right-checkout-items-add-del-itemslist p span {
+        margin-left: 3.5vw;
+
+    }
+
+    #BoldTotal {
+        font-weight: 800;
+    }
+
+    .right-checkout-serial-heading p {
+        font-size: 1.2vw;
+
+    }
+
+    .right-checkout-serial-heading p span {
+        margin-left: 2vw;
+    }
+
+    .right-checkout-items-add-del {
+        text-align: center;
+        height: 16vw;
+
+        border: 0.1vw solid rgb(128, 128, 128);
+        background-color: rgb(224, 222, 222);
+    }
+
+    .right-checkout-items-add-del h1 ion-icon {
+        font-size: 2.3vw;
+    }
+
+    .right-checkout-items-add-del h2 {
+        font-size: 1vw;
+    }
+
+    .right-checkout-items-add-del p {
+        font-size: 1vw;
+        color: rgb(54, 54, 54);
+    }
+
+    .right-checkout-total {
+        display: flex;
+        margin: 0vw 0vw;
+        padding: 1vw 2vw;
+        border: 0.1vw solid gray;
+        border-radius: 0vw 0vw 1vw 1vw;
+        background-color: rgb(224, 222, 222);
+        justify-content: space-between;
+    }
+
+    .right-checkout-total h1 {
+        font-size: 2vw;
+
+    }
+
+    .right-checkout-total p {
+        font-size: 1.8vw;
+        font-weight: 600;
+    }
+
+    .right-checkout-total p span {
+
+        margin-right: 1vw;
+        font-weight: 600;
+    }
+
+    .right-checkout-email {
+        padding:1vw;
+        overflow-x: hidden;
+        border: 0.1vw solid gray;
+
+
+    }
+
+
+
+
+    .right-checkout-email-fullname-label {
+        margin-bottom: 0.7vw;
+        display: block;
+    }
+
+
+    .right-checkout-email-email-label label,
+    .right-checkout-email-phone-label label {
+        display: flex;
+        color: rgb(63, 63, 63);
+        font-size: 1vw;
+        margin-bottom: 0.2vw;
+    }
+
+    .right-checkout-email-fullname-label input,
+    .right-checkout-email-email-label input,
+    .right-checkout-email-phone-label input {
+        box-shadow: 0vw 0.1vw 0.5vw gray;
+        height: 3vw;
+        border: none;
+
+        border-radius: 0.7vw;
+        background-color: rgba(167, 167, 167, 0);
+
+    }
+
+    .right-checkout-email-fullname-label label {
+        display: flex;
+        color: rgb(63, 63, 63);
+        font-size: 1vw;
+        margin-bottom: 0.2vw;
+
+
+    }
+
+
+    .right-checkout-email-fullname-label input::placeholder,
+    .right-checkout-email-email-label input::placeholder,
+    .right-checkout-email-phone-label input::placeholder {
+        padding-left: 1vw;
+        font-size: 1vw;
+
+        color: rgba(128, 128, 128, 0.363);
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .email-phone-box {
+        display: flex;
+
+        justify-content: space-between;
+    }
+
+    .right-checkout-email {
+        background-color: rgb(224, 222, 222);
+        border-radius: 1vw;
+        margin-top: 0.6vw;
+    }
+
+
+    .right-checkout-email-phone-label {
+        margin-bottom: 0.3vw;
+
+    }
+
+    .right-checkout-email-fullname-label input {
+        padding: 0.4vw;
+        font-size: 1vw;
+        width: 27.9vw;
+
+    }
+
+    .email-phone-box input {
+        padding: 0.4vw;
+        font-size: 1vw;
+
+        width: 13vw;
+
+
+    }
+
+    .right-checkout-email h3 {
+        font-size: 1.5vw;
+        color: rgba(0, 0, 0, 0.89);
+        margin-bottom: 1vw;
+    }
+
+    .right-checkout-email-alert {
+        text-align: center;
+        margin: 0vw 0vw;
+        display: none;
+
+    }
+
+    .right-checkout-email-alert2 {
+        text-align: center;
+        margin: 0vw 0vw;
+        display: none;
+
+    }
+
+    .right-checkout-email-alert {
+        color: brown;
+        font-size: 0.9vw;
+
+
+    }
+
+    .right-checkout-email-alert2 {
+        color: rgb(46, 165, 42);
+        font-size: 0.9vw;
+
+    }
+
+    .right-checkout-email-alert2 ion-icon {
+        top: 0.1vw;
+        color: rgb(46, 165, 42);
+        margin-right: 0.2vw;
+        position: relative;
+
+        font-weight: 400;
+    }
+
+    .right-checkout-email-alert ion-icon {
+        top: 0.1vw;
+        color: brown;
+        margin-right: 0.2vw;
+        position: relative;
+
+        font-weight: 400;
+    }
+
+
+
+    .minus {
+        display: none;
+    }
+
+    .Support-info-container {
+        padding: 4vw;
+        display: flex;
+    }
+
+    .Support-info-container div {
+        background-color: rgb(218, 211, 203);
+        margin: 2vw;
+        border-radius: 2vw;
+        border: 0.2vw solid gray;
+
+    }
+
+
+    .Support-info-container div img {
+        height: 8vw;
+        display: flex;
+        margin: 1vw auto;
+        padding-top: 1vw;
+
+
+    }
+
+    .Support-info-container div h3 {
+        font-size: 1.5vw;
+        text-align: center;
+    }
+
+    .Support-info-container div p {
+        text-align: center;
+        font-size: 0.9vw;
+        padding: 1vw;
+        color: rgba(0, 0, 0, 0.637);
+    }
+
+    .subscribe-section {
+        background-color: rgba(13, 116, 233, 0.808);
+        padding: 2vw 5vw;
+        display: flex;
+
+    }
+
+    .subscribe-section h3 {
+        display: flex;
+        align-items: center;
+margin: 1vw;
+width: 30vw;
+
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 3vw;
+        color: rgba(255, 255, 255, 0.733);
+    }
+
+    .subscribe-section div button {
+        display: flex;
+
+
+        padding: 1.5vw 7vw;
+        font-size: 1.4vw;
+
+
+
+    }
+
+    .subscribe-section-input-box {
+        display: flex;
+        justify-content: space-between;
+        width: 50vw;
+
+
+    }
+
+    .subscribe-section-input-box input:nth-child(1) {
+        width: 20.5vw;
+
+    }
+
+    .subscribe-section-input-box input:nth-child(2) {
+        width: 27.5vw;
+
+    }
+
+    .subscribe-section-input-box input {
+        padding: 1.5vw;
+        margin: 1vw 0vw;
+        background-color: rgba(255, 255, 255, 0.281);
+        border: none;
+    }
+
+    .footer {
+        margin-top: 1vw;
+        padding: 1vw 3vw;
+    }
+
+    .footer-container {
+        font-size: 1.5vw;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .footer-container div {
+        margin: 0vw 0vw;
+
+    }
+
+    .footer-container div p {
+        font-size: 0.8vw;
+    }
+
+    .footer-links ul {
+        list-style: none;
+    }
+
+    .footer-links ul li {
+        font-size: 0.8vw;
+    }
+}

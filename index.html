@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "rR3kUXKMhpF3eVsxN",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-box nav-logo">
+                <p>Abc</p>
+            </div>
+            <div class="nav-box nav-links">
+                <ul>
+                    <li>Home</li>
+
+                    <li>Services</li>
+
+                    <li>About Us</li>
+
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="nav-box nav-profile">
+                <p>UserName</p>
+            </div>
+        </nav>
+        <div class="middle-header">
+            <div class="booking-text">
+                <h3>Revitalize Your<br>Clothes with Expert<br><span>Laundry Services!</span></h3>
+                <p>From premium dry cleaning to swift waash and fold,we deliver care and convenience.Schedule apickup
+                    and rediscover the freshness of your clothes today!</p>
+                <a href="#checkout"><button><ion-icon name="storefront-outline"></ion-icon>Book a Service today!</button></a>
+            </div>
+            <div class="booking-img">
+                <img src="https://t4.ftcdn.net/jpg/09/23/11/27/360_F_923112707_4Q8lfpZJeEwU2eVBh8iLAxeNccBNDaW6.jpg"
+                    alt="">
+            </div>
+        </div>
+        <div class="end-header">
+            <div class="end-header-text">
+                <h5>Our Achievements</h5>
+            </div>
+            <div class="end-header-text2">
+                <div>
+                    <h5>15+</h5>
+                    <p>Laundry Services</p>
+                </div>
+
+                <div>
+                    <h5>240+</h5>
+                    <p>Happy Customers</p>
+                </div>
+
+                <div>
+                    <h5>2+ Yrs</h5>
+                    <p>Experience</p>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <section class="checkout-section" id="checkout">
+        <div class="left-checkout">
+            <h3>Our Services</h3>
+            <p class="left-p1">Click On The Add To Cart Button To Add The Services To Your Cart</p>
+            <div class="add-del-items">
+                <div class="add-del-items-name-btn-box">
+                    <p class="add-del-p"><img src="img/laundry.png" alt="">Dry Cleaning<span>&#8377;200.00</span></p>
+                    <button><span class="btn-del-add">Add Item</span><ion-icon class="add"
+                            name="add-circle-outline"></ion-icon><ion-icon class="minus"
+                            name="remove-circle-outline"></ion-icon></button>
+                </div>
+
+
+                <div class="add-del-items-name-btn-box">
+                    <p class="add-del-p"><img src="img/laundry-basket.png" alt="">Wash & Fold<span>&#8377;100.00</span>
+                    </p>
+                    <button><span class="btn-del-add">Add Item</span><ion-icon class="add"
+                            name="add-circle-outline"></ion-icon><ion-icon class="minus"
+                            name="remove-circle-outline"></ion-icon></button>
+                </div>
+
+
+                <div class="add-del-items-name-btn-box">
+                    <p class="add-del-p"><img src="img/iron.png" alt="">Ironing<span>&#8377;30.00</span></p>
+                    <button><span class="btn-del-add">Add Item</span><ion-icon class="add"
+                            name="add-circle-outline"></ion-icon><ion-icon class="minus"
+                            name="remove-circle-outline"></ion-icon></button>
+                </div>
+
+
+                <div class="add-del-items-name-btn-box">
+                    <p class="add-del-p"><img src="img/stain-remover.png" alt="">Stain Removal<span>&#8377;500.00</span>
+                    </p><button><span class="btn-del-add">Add Item</span><ion-icon class="add"
+                            name="add-circle-outline"></ion-icon><ion-icon class="minus"
+                            name="remove-circle-outline"></ion-icon></button>
+                </div>
+
+
+                <div class="add-del-items-name-btn-box">
+                    <p class="add-del-p"><img src="img/leather-jacket.png" alt="">Leather & Suede
+                        Cleaning<span>&#8377;999.00</span></p>
+                    <button><span class="btn-del-add">Add Item</span><ion-icon class="add"
+                            name="add-circle-outline"></ion-icon><ion-icon class="minus"
+                            name="remove-circle-outline"></ion-icon></button>
+                </div>
+
+
+                <div class="add-del-items-name-btn-box">
+                    <p class="add-del-p"><img src="img/bridal-shower.png" alt="">Wedding Dress
+                        Cleaning<span>&#8377;2800.00</span></p>
+                    <button><span class="btn-del-add">Add Item</span><ion-icon class="add"
+                            name="add-circle-outline"></ion-icon><ion-icon class="minus"
+                            name="remove-circle-outline"></ion-icon></button>
+                </div>
+
+
+
+            </div>
+            <p class="left-p left-p-icon"><ion-icon name="alert-circle-outline"></ion-icon>Add the items to the cart and
+                book now</p>
+        </div>
+        <div class="right-checkout">
+            <h3 class="right-checkout-heading">Added Items</h3>
+            <div class="right-checkout-container">
+                <div class="right-checkout-serial-heading">
+                    <p>S.no <span>Service Name</span></p>
+
+                    <p>Price</p>
+                </div>
+
+                <div class="right-checkout-items-add-del">
+                    <div class="right-checkout-items-add-del-itemslist" id="cartList">
+                        <p> <span></span></p>
+
+                        <p></p>
+                    </div>
+                    <h1><ion-icon name="alert-circle-outline"></ion-icon></h1>
+                    <h2 id="NoItemsAdded">No Items Added</h2>
+                    <p class="text">Add Items to the cart from the services bar</p>
+
+
+                </div>
+
+            </div>
+            <div class="right-checkout-total">
+                <h1>Total Amount</h1>
+                <p>&#8377;<span class="total">0.00</span></p>
+            </div>
+            <div class="right-checkout-email">
+                <h3>Book Now</h3>
+
+                <div class="right-checkout-email-fullname-label">
+                    <label for="">Full Name</label>
+                    <input class="right-checkout-email-fullname-input-box" type="text" placeholder="Your Name" required>
+                </div>
+
+                <div class="email-phone-box">
+                    <div class="right-checkout-email-email-label">
+                        <label for="">Email ID</label>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="right-checkout-email-phone-label">
+                        <label for="">Phone Number</label>
+                        <input type="tel" minlength="10" maxlength="10" placeholder="Your Number" required>
+                    </div>
+                </div>
+
+                <button class="btn-book-now1" id="btn-book-now">Book Now</button>
+                <p class="right-checkout-email-alert" id="right-checkout-email-alert"><ion-icon
+                        name="alert-circle-outline"></ion-icon>Add the items to
+                    the cart and
+                    book</p>
+                <p class="right-checkout-email-alert2" id="right-checkout-email-alert2"><ion-icon
+                        name="alert-circle-outline"></ion-icon>Email has been Send Successfully</p>
+            </div>
+
+
+        </div>
+        </div>
+    </section>
+    <section class="Support-info">
+        <div class="Support-info-container">
+            <div>
+                <img src="img/premium.png" alt="">
+                <h3>Premium Services</h3>
+                <p>Elevate Your Wardrobe with our meticulous dry cleaning,ensuring garments look and feel as good as
+                    new.
+                </p>
+            </div>
+
+            <div>
+                <img src="img/technical-support.png" alt="">
+                <h3>Quick Support</h3>
+                <p>We're committed to providing prompt solutions to ensure your experience is smooth and worry-free.</p>
+            </div>
+
+            <div>
+                <img src="img/hassle-free.png" alt="">
+                <h3>Hassle Free Delivery</h3>
+                <p>Enjoy seamless service with our convenient pickup and delivery options tailored to your schedule.</p>
+            </div>
+
+            <div>
+                <img src="img/money.png" alt="">
+                <h3>Affordable Prices</h3>
+                <p>Experience exceptional care without breaking the bank-our affordable prices make laundry day
+                    stress-free.</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="subscribe-section">
+        <h3>Subscribe to our newsletter.</h3>
+        <div>
+            <div class="subscribe-section-input-box">
+                <input type="text" placeholder="Full name">
+                <input type="email" name="" id="" placeholder="Email">
+            </div>
+            <button>Subscribe</button>
+        </div>
+    </section>
+    <footer class="footer">
+
+        <div class="footer-container">
+            <div>
+                <h3>Abc</h3>
+                <h4>About us</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing
+
+                </p>
+            </div>
+            <div class="footer-links">
+                <h4>Important Links</h4>
+                <ul>
+                    <li>About us</li>
+                    <li>Contact us</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms Of Use</li>
+                    <li>Refund Policy</li>
+                </ul>
+            </div>
+
+
+            <div>
+                <h4>Contact</h4>
+                <p>Mail@site.com</p>
+                <p>+91 1234567890</p>
+            </div>
+
+            <div class="subcribe-section-links">
+                <h4>Follow Us</h4>
+                <div>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </div>
+            </div>
+
+
+
+        </div>
+    </footer>
+    <script src="function.js"></script>
+    <script src="email.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+ 
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</body>
+
+</html>
