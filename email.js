@@ -1,18 +1,30 @@
 
-const customerdetails = [{
-    fullname: [],
-    email: [],
-    phoneNo: [],
-}];
+const customerdetails = {
+    fullname: "",
+    email: "",
+    phoneNo: "",
+    total: 0,
+    cart:"",
+};
+function formatCart(cart) {
+    if (cart.length === 0) return "No items selected";
+
+    return cart
+        .map((item, index) => `${index + 1}. ${item.name} - ₹${item.price}`)
+        .join("\n");
+}
 
 
 function sendEmail() {
-  const templateParams = {
-  name: customerdetails[0].fullname,
-  subject: "Order Confirmation",
-  email:  customerdetails[0].email,
-  message: "Thank you For Booking the Service We will get back to you soon!",
-};
+    const templateParams = {
+        name: customerdetails.fullname,
+        email: customerdetails.email,
+        phoneNumber: customerdetails.phoneNo,
+        cart: customerdetails.cart,
+        totalNumber: `₹${customerdetails.total}.00`,
+        subject: "Order Confirmation",
+        message: "Thank you for booking the service. We will contact you soon!"
+    };
 emailjs.send('service_vs678d7', 'template_a4oj349', templateParams).then(
   (response) => {
     console.log('SUCCESS!', response.status, response.text);
@@ -47,11 +59,15 @@ const btnbooknow = document.getElementById("btn-book-now");
 
 
 btnbooknow.addEventListener("click", () => {
-    customerdetails[0].fullname = rightcheckoutemailfullnamelabel.value;
-    customerdetails[0].email = rightcheckoutemailemaillabel.value;
-    customerdetails[0].phoneNo = rightcheckoutemailphonelabel.value;
+     customerdetails.fullname = rightcheckoutemailfullnamelabel.value.trim();
+    customerdetails.email = rightcheckoutemailemaillabel.value.trim();
+    customerdetails.phoneNo = rightcheckoutemailphonelabel.value.trim();
+
+    // ✅ FIXES
+    customerdetails.total = totalnumber;
+    customerdetails.cart = formatCart(cart);
       
-    if ((addedCount > 0 && customerdetails[0].email !== "") && customerdetails[0].phoneNo !== "") {
+    if ((addedCount > 0 && customerdetails.email !== "") && customerdetails.phoneNo !== "") {
            sendEmail();
         rightcheckoutemailalert2.style.display = "block"
         setTimeout(() => {
