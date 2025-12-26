@@ -63,7 +63,7 @@ btnbooknow.addEventListener("click", () => {
     customerdetails.email = rightcheckoutemailemaillabel.value.trim();
     customerdetails.phoneNo = rightcheckoutemailphonelabel.value.trim();
 
-    // ✅ FIXES
+    
     customerdetails.total = totalnumber;
     customerdetails.cart = formatCart(cart);
       
@@ -83,3 +83,4 @@ btnbooknow.addEventListener("click", () => {
         btnBookNow1.classList.add("btn-book-now2");
     }
 })
+
