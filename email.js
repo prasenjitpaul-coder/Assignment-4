@@ -4,7 +4,7 @@ const customerdetails = {
     email: "",
     phoneNo: "",
     total: 0,
-    cart:"",
+    cart: "",
 };
 function formatCart(cart) {
     if (cart.length === 0) return "No items selected";
@@ -25,14 +25,14 @@ function sendEmail() {
         subject: "Order Confirmation",
         message: "Thank you for booking the service. We will contact you soon!"
     };
-emailjs.send('service_vs678d7', 'template_a4oj349', templateParams).then(
-  (response) => {
-    console.log('SUCCESS!', response.status, response.text);
-  },
-  (error) => {
-    console.log('FAILED...', error);
-  },
-);  
+    emailjs.send('service_vs678d7', 'template_a4oj349', templateParams).then(
+        (response) => {
+            console.log('SUCCESS!', response.status, response.text);
+        },
+        (error) => {
+            console.log('FAILED...', error);
+        },
+    );
 }
 
 
@@ -59,19 +59,45 @@ const btnbooknow = document.getElementById("btn-book-now");
 
 
 btnbooknow.addEventListener("click", () => {
-     customerdetails.fullname = rightcheckoutemailfullnamelabel.value.trim();
+    customerdetails.fullname = rightcheckoutemailfullnamelabel.value.trim();
     customerdetails.email = rightcheckoutemailemaillabel.value.trim();
     customerdetails.phoneNo = rightcheckoutemailphonelabel.value.trim();
 
-    
+
     customerdetails.total = totalnumber;
     customerdetails.cart = formatCart(cart);
-      
+
     if ((addedCount > 0 && customerdetails.email !== "") && customerdetails.phoneNo !== "") {
-           sendEmail();
+        sendEmail();
+
         rightcheckoutemailalert2.style.display = "block"
+
         setTimeout(() => {
-        
+            btndeladd.forEach((btn, index) => {
+                btn.innerText = "Add Item";
+                btn.style.color = "";
+                add[index].style.display = "block";
+                minus[index].style.display = "none";
+
+            });
+            Itemindex = "";
+            totalnumber = null;
+            NoItemsAdded.style.display = "block";
+            rightcheckoutitemsadddel.style.display = "block";
+            rightcheckoutitemsaddde2.style.display = "block";
+
+            total.innerText = 0.00;
+            cartList.innerHTML = "";
+            rightcheckoutemailfullnamelabel.value = null;
+            rightcheckoutemailemaillabel.value = null;
+            rightcheckoutemailphonelabel.value = null;
+
+            cart = [];
+            cart.length = 0;
+        }, 1000);
+
+        setTimeout(() => {
+
             rightcheckoutemailalert2.style.display = "none";
         }, 3000);
 
@@ -83,4 +109,3 @@ btnbooknow.addEventListener("click", () => {
         btnBookNow1.classList.add("btn-book-now2");
     }
 })
-
