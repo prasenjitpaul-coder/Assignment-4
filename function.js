@@ -2,7 +2,10 @@
 
 const services = ["Dry Cleaning", "Wash & Fold", "Ironing", "Stain Removal", "Leather & Suede Cleaning", "Wedding Dress Cleaning"];
 const price = [200, 100, 30, 500, 999, 2800];
-const cart = [];
+let cart = [];
+let totalnumber = 0;
+
+let addedCount = cart.length;
 
 const btndeladd = document.querySelectorAll(".btn-del-add");
 const add = document.querySelectorAll(".add");
@@ -18,7 +21,7 @@ const btnBookNow = document.getElementById("btn-book-now")
 
 function renderCart() {
 
-    cartList.innerHTML = ""; // clear old list
+    cartList.innerHTML = ""; 
 
     cart.forEach((item, index) => {
 
@@ -42,27 +45,6 @@ function renderCart() {
     });
 
 };
-
-
-
-
-
-
-
-
-
-
-
-let totalnumber = 0;
-
-let addedCount = cart.length;
-
-
-
-
-
-
-
 
 btndeladd.forEach((btn, index) => {
 
