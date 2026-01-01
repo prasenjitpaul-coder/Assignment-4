@@ -81,7 +81,7 @@ btnbooknow.addEventListener("click", () => {
 
             });
             Itemindex = "";
-            totalnumber = null;
+            totalnumber = 0;
             NoItemsAdded.style.display = "block";
             rightcheckoutitemsadddel.style.display = "block";
             rightcheckoutitemsaddde2.style.display = "block";
