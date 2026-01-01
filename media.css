@@ -443,7 +443,7 @@
 
     .right-checkout-email-alert2 ion-icon {
         top: 0.4vw;
-        color: brown;
+         color: rgb(46, 165, 42);
         position: relative;
 
         font-weight: 400;
